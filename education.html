@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Education history of [Your Name].">
+    <title>Education | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .edu-item {
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        .edu-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .edu-date {
+            font-weight: 600;
+            color: var(--accent);
+            background: rgba(116, 168, 164, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .edu-degree {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+
+        .edu-school {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Tahmid Hasan Oni<span></span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="honors.html" class="nav-link">Honors</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Education</h1>
+
+                <div class="card edu-item">
+                    <div class="edu-meta">
+                        <div>
+                            <div class="edu-degree">Ph.D. in Mechanical Engineering</div>
+                            <div class="edu-school">University of Texas at Arlington, Arlington, Texas</div>
+                        </div>
+                        <div class="edu-date">January 2025 - Present</div>
+                    </div>
+                    <p>Focusing on advanced topics in research. Relevant coursework includes Advanced Algorithms,
+                        Machine Learning, and Data Structures. Dissertation topic: "Predictive Modeling in Complex
+                        Systems."</p>
+                </div>
+
+                <div class="card edu-item">
+                    <div class="edu-meta">
+                        <div>
+                            <div class="edu-degree">Bachelor of Science in Mechanical Engineering </div>
+                            <div class="edu-school">Bangladesh University of Engineering and Technology , Dhaka, Bangladesh</div>
+                        </div>
+                        <div class="edu-date">March 2018 - May 2023</div>
+                    </div>
+                    <p>Graduated with Honors. Specialized in software architecture and distributed systems. Capstone
+                        project involved building a highly scalable microservices platform.</p>
+                </div>
+
+                <div class="card edu-item">
+                    <div class="edu-meta">
+                        <div>
+                            <div class="edu-degree">Higher Secondary School</div>
+                            <div class="edu-school">Dhaka College, Dhaka, Bangladesh</div>
+                        </div>
+                        <div class="edu-date"> June 2015 - March 2017</div>
+                    </div>
+                    <p>Dean's List 2015-2018. Minor in Mathematics. Involved in the Robotics Club and Undergraduate
+                        Research Assistant for the engineering department.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

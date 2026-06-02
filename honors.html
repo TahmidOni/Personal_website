@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Honors and Awards of [Your Name].">
+    <title>Honors & Awards | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .honor-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .honor-item:last-child {
+            border-bottom: none;
+        }
+
+        .honor-item:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .honor-icon {
+            font-size: 2rem;
+            color: #ffd700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 50px;
+            text-align: center;
+        }
+
+        .honor-details {
+            flex: 1;
+        }
+
+        .honor-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+
+        .honor-org {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .honor-date {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: var(--border);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 600px) {
+            .honor-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">[Name]<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="honors.html" class="nav-link">Honors</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Honors & Awards</h1>
+
+                <div class="card" style="padding: 0;">
+
+                    <div class="honor-item">
+                        <div class="honor-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="honor-details">
+                            <div class="honor-title">Best Paper Award</div>
+                            <div class="honor-org">International Conference on Computer Science (ICCS)</div>
+                            <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Awarded to the top 1%
+                                of papers submitted for breakthrough research in data structures.</p>
+                        </div>
+                        <div class="honor-date">2023</div>
+                    </div>
+
+                    <div class="honor-item">
+                        <div class="honor-icon"><i class="fas fa-medal"></i></div>
+                        <div class="honor-details">
+                            <div class="honor-title">Outstanding Graduate Researcher</div>
+                            <div class="honor-org">University Department of Computer Science</div>
+                            <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Recognized for
+                                exceptional contributions to the university's research initiatives and publications.</p>
+                        </div>
+                        <div class="honor-date">2022</div>
+                    </div>
+
+                    <div class="honor-item">
+                        <div class="honor-icon"><i class="fas fa-award"></i></div>
+                        <div class="honor-details">
+                            <div class="honor-title">National Science Foundation Fellowship</div>
+                            <div class="honor-org">NSF</div>
+                            <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Highly competitive
+                                nationwide fellowship supporting promising independent research in STEM fields.</p>
+                        </div>
+                        <div class="honor-date">2021</div>
+                    </div>
+
+                    <div class="honor-item">
+                        <div class="honor-icon"><i class="fas fa-star"></i></div>
+                        <div class="honor-details">
+                            <div class="honor-title">Dean's List</div>
+                            <div class="honor-org">University Name</div>
+                            <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Maintained a 4.0 GPA
+                                for 8 consecutive semesters during undergraduate studies.</p>
+                        </div>
+                        <div class="honor-date">2014 - 2018</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:your.email@example.com" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> [Your Name]. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

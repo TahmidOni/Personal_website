@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research publications and interests of Tahmid Hasan Oni.">
+    <title>Research | Tahmid Hasan Oni</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pub-card {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .pub-icon {
+            background: rgba(116, 168, 164, 0.1);
+            color: var(--accent);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .pub-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-authors {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .pub-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        @media (max-width: 600px) {
+            .pub-card {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"> Tahmid Hasan Oni<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="honors.html" class="nav-link">Honors</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Research</h1>
+
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
+                    My research lies in the fiber reinforced polymenr composites targeting advanced aerospace applications. I look into the characterization of 
+                    fiber-matrix interphase, Stuctural health monitoring of composites, and developing hybrid composite structures for better impact and balastic applications.
+                </p>
+
+                <h2
+                    style="font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">
+                    Selected Publications</h2>
+
+                <div class="card pub-card">
+                    <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                    <div>
+                        <div class="pub-title">"Delamination-informed lifecycle decisions: A dielectric and machine learning framework for composite sorting and recycling"</div>
+                        <div class="pub-authors"> M. M. Rabby,<b>T.H. Oni</b>, P. P. Das, V. Vadlamudi, A. A. Hassen, and R. Raihan</div>
+                        <div class="pub-venue">Composites Part B: Engineering, vol. 297, p. 113007, 2025.</div>
+                        <div class="pub-links">
+                            <a href="https://www.sciencedirect.com/science/article/pii/S1359836825009187?via%3Dihub"><i class="fas fa-external-link-alt"></i> Read Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card pub-card">
+                    <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                    <div>
+                        <div class="pub-title">"A study of the thermal performance of a converging–diverging microchannel heat sink with triangular ribs"</div>
+                        <div class="pub-authors"><b>T. H. Oni</b>, MAH Mamun</div>
+                        <div class="pub-venue">14th International Conference on Mechanical Engineering (ICME 2023)</div>
+                        <div class="pub-links">
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4862430"><i class="fas fa-external-link-alt"></i> Read Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

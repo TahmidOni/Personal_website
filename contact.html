@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact [Your Name] for collaborations, opportunities, and questions.">
+    <title>Contact | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            background: var(--accent);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+        }
+
+        .contact-info h2 {
+            color: white;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        .info-item p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        .info-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--bg-color);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(116, 168, 164, 0.15);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Tahmid Hasan Oni<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="honors.html" class="nav-link">Honors</a></li> -->
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+
+                <div class="card" style="padding: 2rem;">
+                    <div class="contact-grid">
+
+                        <!-- Contact Information -->
+                        <div class="contact-info">
+                            <h2>Contact Info</h2>
+
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p>Email</p>
+                                    <a href="mailto:txo1028@mavs.uta.edu">txo1028@mavs.uta.edu</a>
+                                    <a href="mailto:tahmidhasan.oni@uta.edu">tahmidhasan.oni@uta.edu</a>
+                                    <a href="mailto:oni144b@gmail.com">oni144b@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>Phone</p>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div> -->
+
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Location</p>
+                                    <p>Arlington, TX, USA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form-container">
+                            <form action="#" method="POST"
+                                onsubmit="event.preventDefault(); alert('Message feature requires backend setup. Currently in demo mode.');">
+                                <div class="grid-2">
+                                    <div class="form-group">
+                                        <label class="form-label" for="firstName">First Name</label>
+                                        <input type="text" id="firstName" class="form-control" required
+                                            placeholder="First name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" required
+                                            placeholder="Last name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input type="email" id="email" class="form-control" required
+                                        placeholder="jane@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="subject">Subject</label>
+                                    <input type="text" id="subject" class="form-control" required
+                                        placeholder="How can I help you?">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Message</label>
+                                    <textarea id="message" class="form-control" required
+                                        placeholder="Your message here..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Extracurricular activities and community involvement of [Your Name].">
+    <title>Activities | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .activity-card {
+            text-align: center;
+        }
+
+        .activity-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .activity-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .activity-role {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .activity-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Tahmid Hasan Oni<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="honors.html" class="nav-link">Honors</a></li> -->
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Extracurricular Activities</h1>
+
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
+                    Beyond professional work, I am deeply involved in my community and value leadership, teamwork, and
+                    continuous learning outside the classroom and office.
+                </p>
+
+                <div class="grid-3">
+
+                    <div class="card activity-card">
+                        <div class="activity-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="activity-title">Society for the Advancement of Material and Process Engineering (SAMPE)</h3>
+                        <div class="activity-role">Treasurer (2026 - Present)</div>
+                        <p class="activity-desc">Organized technical workshops, hackathons, and guest speaker
+                            events.</p>
+                    </div>
+
+                    <!-- <div class="card activity-card">
+                        <div class="activity-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3 class="activity-title">Code for Good Initiative</h3>
+                        <div class="activity-role">Lead Volunteer Coordinator</div>
+                        <p class="activity-desc">Partnered with local non-profits to build custom software solutions to
+                            improve their operational efficiency. Mentored junior developers in the process.</p>
+                    </div>
+
+                    <div class="card activity-card">
+                        <div class="activity-icon"><i class="fas fa-mountain"></i></div>
+                        <h3 class="activity-title">Outdoor Adventure Club</h3>
+                        <div class="activity-role">Member & Guide</div>
+                        <p class="activity-desc">Led monthly hiking and rock climbing expeditions for students.
+                            Emphasized safety, teamwork, and leaving no trace principles in nature.</p>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

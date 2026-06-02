@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects and portfolio of [Your Name].">
+    <title>Projects | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-card {
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            background: rgba(116, 168, 164, 0.1);
+            color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+        }
+
+        .project-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">[Name]<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="honors.html" class="nav-link">Honors</a></li> -->
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Projects</h1>
+
+                <div class="grid-3">
+
+                    <div class="card project-card">
+                        <div style="overflow: hidden;">
+                            <img src="Assets/SHM.png"
+                                alt="Project 1" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Material Science</span>
+                                <span class="project-tag">NDE</span>
+                            </div>
+                            <h3 class="project-title">Structural Health Monitoring of Polymer Composites</h3>
+                            <p class="project-desc">Investigating the predictive performance, delamination, and material durability of fiber-reinforced polymer composites using non-destructive evaluation techniques.</p>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div style="overflow: hidden;">
+                            <img src="Assets/nano.png"
+                                alt="Project 2" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">AFM</span>
+                                <span class="project-tag">Nanoscale</span>
+                            </div>
+                            <h3 class="project-title">Advanced Nanoscale Characterization</h3>
+                            <p class="project-desc">Utilizing Park Systems NX10 for high-resolution nanoscale characterization, applying CAFM, EFM, and NCM modes alongside force slope calibration and cantilever selection.</p>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div style="overflow: hidden;">
+                            <img src="Assets/moisture.png"
+                                alt="Project 3" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">PINNs</span>
+                                <span class="project-tag">PhysicsNeMo</span>
+                            </div>
+                            <h3 class="project-title">Universal Physics-Informed Machine Learning framework for moisture ingress prediction</h3>
+                            <p class="project-desc">Developing Physics-Informed Neural Networks (PINNs) and utilizing NVIDIA PhysicsNeMo for surrogate modeling and complex transport physics applications.</p>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div style="overflow: hidden;">
+                            <img src="Assets/helmet image.jpg"
+                                alt="Project 4" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Manufacturing</span>
+                                <span class="project-tag">Impact Testing</span>
+                            </div>
+                            <h3 class="project-title">Hybrid Combat Helmet Development</h3>
+                            <p class="project-desc">Designing, manufacturing, and testing hybrid combat helmets, featuring detailed mold design, precision thickness measurements, and comprehensive impact analysis.</p>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

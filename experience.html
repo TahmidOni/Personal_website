@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional experience and work history of [Your Name].">
+    <title>Professional Experience | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .exp-container {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .exp-container::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .exp-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 4px solid var(--bg-color);
+            transform: translateX(-50%);
+        }
+
+        .exp-header {
+            margin-bottom: 1rem;
+        }
+
+        .exp-role {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+
+        .exp-company {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .exp-date-loc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .exp-date-loc i {
+            margin-right: 0.4rem;
+        }
+
+        .exp-bullets {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .exp-bullets li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">[Name]<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <!-- <li><a href="honors.html" class="nav-link">Honors</a></li> -->
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Professional Experience</h1>
+
+                <div class="exp-container">
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div class="exp-role"> Graduate Research Assistant</div>
+                            <div class="exp-company">IPPM, UTARI</div>
+                            <div class="exp-date-loc">
+                                <span><i class="far fa-calendar-alt"></i> Jan 2026 - Present</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Arlington, TX</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Working on a DARPA funded Advanced Blast Resistant Combat Helmet Development</li>
+                            <li>Collaborating with our Industry Partner <b>CORTEX Dynamix</b> for this project.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div class="exp-role">Graduate Teaching Assistant</div>
+                            <div class="exp-company">University of Texas at Arlington</div>
+                            <div class="exp-date-loc">
+                                <span><i class="far fa-calendar-alt"></i> Jan 2025 - Dec 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Arlington, TX</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Conducted regular office hours to mentor students one-on-one, assisting them with complex Problems</li>
+                            <li> Prepared instructional videos on complex topics </li>
+                            <li>Graded exams and assisted in performance analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div class="exp-role">Lecturer</div>
+                            <div class="exp-company">Sonargaon University</div>
+                            <div class="exp-date-loc">
+                                <span><i class="far fa-calendar-alt"></i> Jul 2024 - Dec 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Worked as a full-time faculty and teaching Fluid Dynamics, Engineering Thermodynamics, Mechanics of
+Machinery, etc., and their related labs.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div class="exp-role">Industrial Trainee</div>
+                            <div class="exp-company">National Polymer Industries Ltd.</div>
+                            <div class="exp-date-loc">
+                                <span><i class="far fa-calendar-alt"></i> Oct 2022 - Nov 2022</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Gained hands-on experience in a leading Bangladeshi plastic industry, was responsible for conducting inspec-
+tions and monitoring power generation and heat recovery equipment.</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="http://linkedin.com/in/tahmid-hasan-oni-07b539218" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/TahmidOni" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=o7gsbaMAAAAJ&hl=en" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:tahmidhasan.oni@uta.edu" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> Tahmid Hasan Oni. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

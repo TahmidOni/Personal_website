@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Life in Stills - A collection of memorable moments and photography by [Your Name].">
+    <title>Life in Stills | [Your Name]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Slideshow Styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            background: #000;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            position: relative;
+        }
+
+        .slide.active {
+            display: block;
+            animation: fade 0.8s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            color: white;
+            border: none;
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .slider-btn:hover {
+            background: var(--accent);
+        }
+
+        .slider-btn.prev {
+            left: 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        .slider-btn.next {
+            right: 0;
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+        }
+
+        .dots-container {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            background: var(--border);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active,
+        .dot:hover {
+            background: var(--accent);
+            transform: scale(1.2);
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.5
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide img {
+                height: 400px;
+            }
+
+            .slider-btn {
+                padding: 0.75rem 1rem;
+            }
+        }
+
+        /* Gallery Styles */
+        .vibrant-section {
+            background: linear-gradient(135deg, rgba(116, 168, 164, 0.05) 0%, rgba(116, 168, 164, 0.15) 100%);
+            padding: 4rem 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-grid {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                column-count: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-grid {
+                column-count: 3;
+            }
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--card-bg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-content {
+            padding: 1.5rem;
+        }
+
+        .gallery-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            background: rgba(116, 168, 164, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        .gallery-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .gallery-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">[Name]<span>.</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="honors.html" class="nav-link">Honors</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="stills.html" class="nav-link active">Stills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex: 1;">
+        <section class="section" style="padding-bottom: 2rem;">
+            <div class="container">
+                <h1 class="section-title">Life in Stills</h1>
+
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+                    A collection of my memorable moments, travels, and perspectives captured through a lens.
+                </p>
+
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1542051842920-c7b0da95b54a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Mountain Expedition" loading="lazy">
+                        <div class="slide-caption">Exploring the Grand Canyon during a research trip</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Team Meeting" loading="lazy">
+                        <div class="slide-caption">Presenting findings at the annual Tech Conference</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1506744626753-eda818274889?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Nature Photography" loading="lazy">
+                        <div class="slide-caption">Weekend hike away from the screens</div>
+                    </div>
+
+                    <button class="slider-btn prev" aria-label="Previous Slide"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next" aria-label="Next Slide"><i
+                            class="fas fa-chevron-right"></i></button>
+
+                </div>
+
+                <div class="dots-container">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vibrant Masonry Gallery -->
+        <section class="container">
+            <div class="vibrant-section">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="font-size: 2.2rem; color: var(--accent-dark);">Stories & Adventures</h2>
+                    <p style="max-width: 600px; margin: 0 auto; color: var(--text-main);">More snapshots from festivals,
+                        tours, and random serendipitous moments that made life a bit more fun.</p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Music Festival" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Festival</span>
+                            <h3 class="gallery-title">Echoes in the Valley</h3>
+                            <p class="gallery-desc">It started pouring rain halfway through the headliner's set. We
+                                ended up dancing in the mud until 2 AM—completely soaked but completely happy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Road Tour" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Tour</span>
+                            <h3 class="gallery-title">The Great Coastal Drive</h3>
+                            <p class="gallery-desc">Took a spontaneous detour to see the "world's largest artichoke."
+                                The artichoke was deeply underwhelming, but the coastal sunset we caught afterward was
+                                legendary.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Conference Trip" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Travel</span>
+                            <h3 class="gallery-title">Lost in Translation</h3>
+                            <p class="gallery-desc">I accidentally ordered essentially "fire soup" instead of coffee at
+                                a rural stop in Kyoto. Turns out, it's a great way to wake up.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Carnival Night" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Festival</span>
+                            <h3 class="gallery-title">Neon Nights</h3>
+                            <p class="gallery-desc">Won a giant stuffed bear I definitely didn't need by knocking down
+                                milk bottles. Carried it around for 4 hours like a trophy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="City Tour" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Tour</span>
+                            <h3 class="gallery-title">Venetian Alleys</h3>
+                            <p class="gallery-desc">Getting lost here is basically required by law. We stumbled upon a
+                                tiny bakery that made the best cannoli I've ever had in my entire life.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1533174000253-12822a16d5f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Campfire" loading="lazy">
+                        <div class="gallery-content">
+                            <span class="gallery-tag">Adventure</span>
+                            <h3 class="gallery-title">Midnight Sparks</h3>
+                            <p class="gallery-desc">Someone brought a guitar, someone else brought marshmallows. We
+                                ended up singing off-key 90s rock ballads until the stars came out.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:your.email@example.com" class="social-link" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> [Your Name]. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
