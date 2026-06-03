@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tahmidoni.github.io/Personal_website/index.html</loc>
+    <loc>https://tahmidoni.github.io/Personal_website/</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://tahmidoni.github.io/Personal_website/education.html</loc>
-    <priority>0.80</priority>
+    <loc>https://tahmidoni.github.io/Personal_website/index.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://tahmidoni.github.io/Personal_website/research.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://tahmidoni.github.io/Personal_website/experience.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://tahmidoni.github.io/Personal_website/projects.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://tahmidoni.github.io/Personal_website/education.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tahmidoni.github.io/Personal_website/experience.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://tahmidoni.github.io/Personal_website/activities.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://tahmidoni.github.io/Personal_website/stills.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://tahmidoni.github.io/Personal_website/contact.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <priority>0.70</priority>
   </url>
 </urlset>
